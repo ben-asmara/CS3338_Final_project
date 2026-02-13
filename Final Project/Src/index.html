@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS3338 Group 5 Final Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-lg">G5</div>
+        <div>
+          <h1 class="text-xl font-semibold">CS3338 Final Project</h1>
+          <p class="text-sm text-gray-600">Group 5</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm text-gray-700">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#team" class="hover:underline">Team</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="hidden md:inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm">Get in touch</button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="grid gap-8 md:grid-cols-2 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">Smart Campus Helper</h2>
+        <p class="mt-4 text-gray-700">A friendly app that helps students find resources schedule study sessions and share notes. Built for scalability and ease of use as our CS3338 final project.</p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#features" class="inline-block bg-cyan-500 text-white px-5 py-3 rounded-lg font-medium">See features</a>
+          <a href="#demo" class="inline-block border border-gray-300 px-5 py-3 rounded-lg text-sm">Live demo</a>
+        </div>
+
+        <div class="mt-8 text-sm text-gray-600">
+          <strong>Technologies</strong>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-gray-100">React</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100">Tailwind CSS</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100">Node</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100">Express</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-lg font-semibold">Project quick start</h3>
+        <ol class="mt-4 list-decimal list-inside text-gray-700 space-y-2">
+          <li>Clone the repo</li>
+          <li>Install dependencies</li>
+          <li>Run the dev server</li>
+          <li>Open the app in your browser</li>
+        </ol>
+        <pre class="mt-4 bg-gray-100 p-3 rounded text-sm overflow-auto">git clone https://example.com/yourrepo.git
+cd yourrepo
+npm install
+npm run dev</pre>
+      </div>
+    </section>
+
+    <section id="features" class="mt-12">
+      <h3 class="text-2xl font-semibold">Features</h3>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <div class="bg-white rounded-lg p-5 shadow">
+          <h4 class="font-semibold">Resource search</h4>
+          <p class="mt-2 text-sm text-gray-600">Find study materials tutors and campus spots in seconds.</p>
+        </div>
+        <div class="bg-white rounded-lg p-5 shadow">
+          <h4 class="font-semibold">Study groups</h4>
+          <p class="mt-2 text-sm text-gray-600">Create and join study sessions share notes and track progress.</p>
+        </div>
+        <div class="bg-white rounded-lg p-5 shadow">
+          <h4 class="font-semibold">Schedule sync</h4>
+          <p class="mt-2 text-sm text-gray-600">Sync class schedules and get reminders before important events.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="mt-12">
+      <h3 class="text-2xl font-semibold">Team</h3>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white rounded-lg p-4 text-center shadow">
+          <div class="h-14 w-14 rounded-full bg-indigo-100 mx-auto flex items-center justify-center font-semibold">B</div>
+          <p class="mt-3 font-medium">Ben</p>
+          <p class="text-xs text-gray-500">Frontend</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 text-center shadow">
+          <div class="h-14 w-14 rounded-full bg-indigo-100 mx-auto flex items-center justify-center font-semibold">A</div>
+          <p class="mt-3 font-medium">Aren</p>
+          <p class="text-xs text-gray-500">Backend</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 text-center shadow">
+          <div class="h-14 w-14 rounded-full bg-indigo-100 mx-auto flex items-center justify-center font-semibold">C</div>
+          <p class="mt-3 font-medium">Carter</p>
+          <p class="text-xs text-gray-500">Database</p>
+        </div>
+        <div class="bg-white rounded-lg p-4 text-center shadow">
+          <div class="h-14 w-14 rounded-full bg-indigo-100 mx-auto flex items-center justify-center font-semibold">R</div>
+          <p class="mt-3 font-medium">Roxana</p>
+          <p class="text-xs text-gray-500">Design</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-12 bg-white p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-semibold">Contact</h3>
+      <p class="mt-2 text-sm text-gray-600">Questions suggestions or demo requests reach out to the team email.</p>
+
+      <form class="mt-4 grid gap-3 md:grid-cols-2">
+        <input type="text" placeholder="Your name" class="p-3 rounded border border-gray-200" />
+        <input type="email" placeholder="Your email" class="p-3 rounded border border-gray-200" />
+        <textarea placeholder="Message" class="md:col-span-2 p-3 rounded border border-gray-200 h-28"></textarea>
+        <button type="submit" class="md:col-span-2 bg-indigo-600 text-white px-4 py-2 rounded">Send message</button>
+      </form>
+    </section>
+
+    <footer class="mt-12 text-center text-sm text-gray-500">Made with care by Ben Aren Carter Roxana for CS3338</footer>
+  </main>
+
+  <script>
+    // Simple demo handler for the contact form so the user can test locally
+    const form = document.querySelector('form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thanks for reaching out The team will get back to you');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
